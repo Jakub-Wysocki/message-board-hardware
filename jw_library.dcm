@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP esp32-c3
+D esp32-c3-32s devboard with risc v
+K esp32, esp32-c3, risc-v
+F https://docs.ai-thinker.com/_media/esp32/docs/esp-c3-32s-kit-v1.0_specification.pdf
+$ENDCMP
+#
+#End Doc Library
