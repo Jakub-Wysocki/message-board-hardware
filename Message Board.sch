@@ -239,7 +239,7 @@ Text Label 8900 2000 2    50   ~ 0
 EPD_RST
 Text Label 8900 1900 2    50   ~ 0
 EPD_BUSY
-Text Label 8900 1800 2    50   ~ 0
+Text Label 6000 3150 0    50   ~ 0
 3.3V_OUT
 Text Label 8900 1300 2    50   ~ 0
 RESE
@@ -754,15 +754,15 @@ Text Label 2000 1750 2    50   ~ 0
 IO1
 Text Label 2000 1850 2    50   ~ 0
 IO2
-Text Label 3400 1750 0    50   ~ 0
+Text Label 2000 1950 2    50   ~ 0
 EPD_BUSY
-Text Label 3400 1850 0    50   ~ 0
-EPD_RST
-Text Label 3400 1950 0    50   ~ 0
-EPD_DC
 Text Label 3400 2050 0    50   ~ 0
-EPD_CS
+EPD_RST
 Text Label 3400 2150 0    50   ~ 0
+EPD_DC
+Text Label 3400 1950 0    50   ~ 0
+EPD_CS
+Text Label 2000 2250 2    50   ~ 0
 EPD_CLK
 Text Label 3400 2250 0    50   ~ 0
 EPD_DATA
@@ -801,20 +801,6 @@ F 3 "~" H 1000 1950 50  0001 C CNN
 	1    1000 1950
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2000 2250 1200 2250
-Wire Wire Line
-	2000 2150 1200 2150
-Wire Wire Line
-	1200 2050 2000 2050
-Wire Wire Line
-	2000 1950 1200 1950
-Wire Wire Line
-	1200 1850 1800 1850
-Wire Wire Line
-	1800 1850 1800 1450
-Wire Wire Line
-	1800 1450 2000 1450
 Text Label 3400 1450 0    50   ~ 0
 RX
 Text Label 3400 1550 0    50   ~ 0
@@ -823,4 +809,52 @@ Text Label 1200 1650 0    50   ~ 0
 LX
 Text Label 1200 1750 0    50   ~ 0
 RX
+Text Label 3400 1850 0    50   ~ 0
+IO18
+Text Label 1200 2050 0    50   ~ 0
+IO18
+Text Label 3400 1750 0    50   ~ 0
+IO19
+Text Label 1200 1950 0    50   ~ 0
+IO19
+Text Label 2000 1450 2    50   ~ 0
+RST
+Text Label 1200 1850 0    50   ~ 0
+RST
+Text Label 2000 2050 2    50   ~ 0
+IO4
+Text Label 1200 2250 0    50   ~ 0
+IO4
+Text Label 2000 2150 2    50   ~ 0
+IO5
+Text Label 1200 2150 0    50   ~ 0
+IO5
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 62136BF1
+P 5800 3250
+F 0 "J4" H 5718 2925 50  0000 C CNN
+F 1 "Conn_01x03" H 5718 3016 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 5800 3250 50  0001 C CNN
+F 3 "~" H 5800 3250 50  0001 C CNN
+	1    5800 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 62137F60
+P 6100 3350
+F 0 "#PWR0114" H 6100 3100 50  0001 C CNN
+F 1 "GND" H 6105 3177 50  0000 C CNN
+F 2 "" H 6100 3350 50  0001 C CNN
+F 3 "" H 6100 3350 50  0001 C CNN
+	1    6100 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3350 6000 3350
+Text Label 6000 3250 0    50   ~ 0
+BS
+Text Label 8900 1800 2    50   ~ 0
+BS
 $EndSCHEMATC
